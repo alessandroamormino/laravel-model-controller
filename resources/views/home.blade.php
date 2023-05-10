@@ -1,8 +1,10 @@
 @extends('layout/main')
 
 @section('content')
+<main>
+  <h1>Movies</h1>
   <div class="container">
-    <div class="row">
+    <div class="row g-3">
       @foreach($movies as $singleMovie)
         <div class="col-4">
           <div class="card">
@@ -18,4 +20,5 @@
       @endforeach
     </div>
   </div>
+</main>
 @endsection

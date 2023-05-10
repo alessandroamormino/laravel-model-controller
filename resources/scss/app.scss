@@ -1,1 +1,48 @@
 @import '~bootstrap/scss/bootstrap';
+
+body{
+  background-color: #212121;
+  color: white;
+  height: 100dvh;
+}
+
+nav{
+  background-color: #35bbcf;
+}
+
+main{
+  h1{
+    text-align: center;
+    padding: 1em 0;
+  }
+  .card{
+    background-color: #3c3c3c;
+    transition: transform .4s ease;
+    &:hover{
+      transform: scale(1.03)
+    }
+  }
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // flex
+  padding: 2em 2em;
+  margin-top: 18em;
+
+  border-top: 1px solid #3c3c3c;
+
+  .right .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    // flex
+    & a{
+      font-size: 1.4em;
+      color: white;
+    }
+  }
+}
